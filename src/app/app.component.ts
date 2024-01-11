@@ -13,6 +13,11 @@ export class AppComponent implements OnInit {
   isAboutVisible: boolean = false;
   isStudioVisible: boolean = false;
   isContactsVisible: boolean = false;
+  isImgVisible: boolean = false;
+  isText1Visible: boolean = false; // New variable
+  isText2Visible: boolean = false;
+  isText3Visible: boolean = false;
+  isText4Visible: boolean = false;
 
   constructor(private el: ElementRef) {}
 
@@ -31,20 +36,18 @@ export class AppComponent implements OnInit {
 
     setTimeout(() => {
       this.isH2Visible = true;
-    }, 2000);
+    }, 2000)
     
   }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    // Calcola la posizione della sezione "About" rispetto alla finestra di visualizzazione
-    const aboutSectionOffset = this.el.nativeElement.querySelector('.bg-light').offsetTop;
+    const aboutSectionOffset = this.el.nativeElement.querySelector('.bg-light-1').offsetTop;
     const studioSectionOffset = this.el.nativeElement.querySelector('.first-section-2').offsetTop;
     const contactsSectionOffset = this.el.nativeElement.querySelector('.bg-light-2').offsetTop;
     const windowHeight = window.innerHeight;
-    const scrollPosition = window.scrollY || window.pageYOffset;
+    const scrollPosition = window.scrollY || window.scrollY;
 
-    // Verifica se la sezione "About" è nella visuale
     if (scrollPosition >= aboutSectionOffset - windowHeight / 2) {
       this.isAboutVisible = true;
     }
@@ -55,6 +58,26 @@ export class AppComponent implements OnInit {
 
     if (scrollPosition >= contactsSectionOffset - windowHeight / 2) {
       this.isContactsVisible = true;
+    }
+
+    if (!this.isImgVisible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isImgVisible = true;
+    }
+
+    if (!this.isText1Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isText1Visible = true;
+    }
+    
+    if (!this.isText2Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isText2Visible = true;
+    }
+
+    if (!this.isText3Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isText3Visible = true;
+    }
+
+    if (!this.isText4Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isText4Visible = true;
     }
   }
 }

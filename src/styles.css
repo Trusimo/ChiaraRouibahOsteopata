@@ -21,6 +21,15 @@ body {
     src: local('AbhayaLibre'), url('../src/assets/fonts/AbhayaLibre-Regular.ttf') format('truetype');
 }
 
+.container {
+    max-width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
 .first-section,
 .first-section-2 {
     position: relative;
@@ -96,7 +105,7 @@ h2.show {
     transform: translateY(0);
 }
 
-.bg-light,
+.bg-light-1,
 .bg-light-2 {
     position: relative;
     display: flex;
@@ -104,10 +113,9 @@ h2.show {
     align-items: center;
     flex-direction: column;
     background-color: #5A95B6;
-    height: 100vh;
 }
 
-.bg-light.show,
+.bg-light-1.show,
 .bg-light-2.show {
     opacity: 1;
 }
@@ -120,7 +128,51 @@ h2.show {
     background-color: #5A95B6;
 }
 
+.text-container {
+    z-index: 2;
+}
+
+/* ANIMAZIONI TESTI */
+.chiara {
+    opacity: 0;
+    width: 400px;
+    padding: 30px 0;
+    transition: opacity 2s ease-in-out;
+    z-index: 2;
+}
+
+.chiara.show {
+    opacity: 1;
+}
+
+.text-1, .text-3 {
+    opacity: 0;
+    width: 70%;
+    transition: opacity 1s ease, transform 2.3s ease;
+}
+
+.text-1.show, .text-3.show {
+    opacity: 1;
+    transform: translateX(70px);
+}
+
+.text-2, .text-4 {
+    opacity: 0;
+    width: 70%;
+    transition: opacity 1s ease, transform 2.3s ease;
+}
+
+.text-2.show, .text-4.show {
+    opacity: 1;
+    transform: translateX(-70px);
+}
+
 @media (max-width: 768px) {
+
+    .chiara {
+        width: 300px;
+    }
+
     h1.font-amsterdam {
         font-size: 45px;
     }
@@ -133,5 +185,23 @@ h2.show {
     .background-image,
     .background-image-light {
         background-size: 300px;
+    }
+
+    .text-1, .text-3 {
+        width: 300px;
+    }
+
+    .text-1.show, .text-3.show {
+        opacity: 1;
+        transform: translateX(40px);
+    }
+
+    .text-2, .text-4 {
+        width: 300px;
+    }
+
+    .text-2.show, .text-4.show {
+        opacity: 1;
+        transform: translateX(-40px);
     }
 }
