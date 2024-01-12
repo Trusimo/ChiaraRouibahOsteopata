@@ -92,7 +92,7 @@ h1.font-amsterdam.show {
 
 h2 {
     font-size: 38px;
-    margin-top: 20px;
+    margin-top: 40px;
     opacity: 0;
     font-weight: 100;
     transition: opacity 1s ease, transform 1s ease;
@@ -139,10 +139,15 @@ h2.show {
     padding: 30px 0;
     transition: opacity 2s ease-in-out;
     z-index: 2;
+    border-radius: 50%;
 }
 
 .chiara.show {
     opacity: 1;
+}
+
+.text-1, .text-2, .text-3, .text-4 {
+    font-size: 20px;
 }
 
 .text-1, .text-3 {
@@ -167,6 +172,30 @@ h2.show {
     transform: translateX(-70px);
 }
 
+.studio-text-1 {
+    opacity: 0;
+    font-size: 24px;
+    transition: opacity 2.3s ease, transform 2.3s ease;
+    padding-top: 70px;
+}
+
+.studio-text-1.show {
+    opacity: 1;
+    transform: translateY(-70px);
+}
+
+.img-1 {
+    opacity: 0;
+    width: 400px;
+    margin-top: -200px;
+    transition: opacity 2.3s ease, transform 2.3s ease;
+}
+
+.img-1.show {
+    opacity: 1;
+    transform: translateY(70px);
+}
+
 @media (max-width: 768px) {
 
     .chiara {
@@ -179,13 +208,17 @@ h2.show {
 
     h2 {
         font-size: 30px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     .background-image,
     .background-image-light {
         background-size: 300px;
     }
+
+    .text-1, .text-2, .text-3, .text-4 {
+        font-size: 16px;
+    }    
 
     .text-1, .text-3 {
         width: 300px;
@@ -203,5 +236,29 @@ h2.show {
     .text-2.show, .text-4.show {
         opacity: 1;
         transform: translateX(-40px);
+    }
+
+    .studio-text-1 {
+        opacity: 0;
+        font-size: 24px;
+        transition: opacity 2.3s ease, transform 2.3s ease;
+        padding-top: 70px;
+    }
+    
+    .studio-text-1.show {
+        opacity: 1;
+        transform: translateY(-70px);
+    }
+    
+    .img-1 {
+        opacity: 0;
+        width: 200px;
+        margin-top: -150px;
+        transition: opacity 2.3s ease, transform 2.3s ease;
+    }
+    
+    .img-1.show {
+        opacity: 1;
+        transform: translateY(150px);
     }
 }

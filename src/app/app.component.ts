@@ -18,6 +18,9 @@ export class AppComponent implements OnInit {
   isText2Visible: boolean = false;
   isText3Visible: boolean = false;
   isText4Visible: boolean = false;
+  isStudioText1Visible: boolean = false;
+  isStudioText2Visible: boolean = false;
+  isStudioImg1Visible: boolean = false;
 
   constructor(private el: ElementRef) {}
 
@@ -78,6 +81,18 @@ export class AppComponent implements OnInit {
 
     if (!this.isText4Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
       this.isText4Visible = true;
+    }
+
+    if (!this.isStudioText1Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isStudioText1Visible = true;
+    }
+
+    if (!this.isStudioText2Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isStudioText2Visible = true;
+    }
+
+    if (!this.isStudioImg1Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
+      this.isStudioImg1Visible = true;
     }
   }
 }

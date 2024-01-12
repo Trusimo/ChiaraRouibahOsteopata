@@ -6,74 +6,95 @@
 </section>
 
 <!-- SEZIONE ABOUT -->
-  <section class="bg-light-1" [ngClass]="{'show': isAboutVisible}">
-    <div class="container">
-      <div class="background-image-light" [ngClass]="{'show': isAboutVisible}"></div>
-      <div class="text-container">
-        <div class="flex-center">
-          <img class="chiara" src="../assets/images/e3e85ad847ffeccfe416803b3efa63aa.jpeg"
-            [ngClass]="{'show': isImgVisible && isAboutVisible}">
+<section class="bg-light-1" [ngClass]="{'show': isAboutVisible}">
+  <div class="container">
+    <div class="background-image-light" [ngClass]="{'show': isAboutVisible}"></div>
+    <div class="text-container">
+      <div class="flex-center">
+        <img class="chiara" src="../assets/images/e3e85ad847ffeccfe416803b3efa63aa.jpeg"
+          [ngClass]="{'show': isImgVisible && isAboutVisible}">
+      </div>
+      <div class="row">
+        <div class="col flex-center">
+          <p class="text-1" [ngClass]="{'show': isText1Visible && isImgVisible}">Mi chiamo Chiara Rouibah e sono
+            un’osteopata.
+            Ho conseguito la laurea in osteopatia presso la International
+            College of Osteopathic Medicine (ICOM) al termine di un percorso di studi della durata di cinque anni.
+            Durante il
+            mio percorso formativo oltre a seguire le lezioni teoriche e pratiche ho svolto più di 1300 ore di tirocinio
+            pratico presso la clinica universitaria dove ho avuto la possibilità di interfacciarmi sin da subito con i
+            pazienti di tutte le età e di acquisire così le conoscenze e competenze necessarie relative alla gestione
+            del
+            paziente nella sua globalità.</p>
         </div>
-        <div class="row">
-          <div class="col flex-center">
-            <p class="text-1" [ngClass]="{'show': isText1Visible && isImgVisible}">Mi chiamo Chiara Rouibah e sono
-              un’osteopata.
-              Ho conseguito la laurea in osteopatia presso la International
-              College of Osteopathic Medicine (ICOM) al termine di un percorso di studi della durata di cinque anni.
-              Durante il
-              mio percorso formativo oltre a seguire le lezioni teoriche e pratiche ho svolto più di 1300 ore di tirocinio
-              pratico presso la clinica universitaria dove ho avuto la possibilità di interfacciarmi sin da subito con i
-              pazienti di tutte le età e di acquisire così le conoscenze e competenze necessarie relative alla gestione
-              del
-              paziente nella sua globalità.</p>
-          </div>
-          <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col flex-center">
+          <p class="text-2" [ngClass]="{'show': isText2Visible && isImgVisible}">
+            Prediligo un approccio che si basa sull’empatia, sull’ascolto del paziente e sulla comprensione non solo
+            della
+            sintomatologia riferita, ma anche di tutti gli aspetti che possono concorrere nella sua manifestazione, al
+            fine di
+            ideare un piano di trattamento incentrato sul singolo individuo. Il piano di trattamento sarà quindi unico e
+            su
+            misura, in base alle valutazioni effettuate e le esigenze del paziente, in quanto considero di fondamentale
+            importanza il riconoscimento e la valorizzazione dell’individualità e dell’unicità della persona.
+          </p>
         </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col flex-center">
-            <p class="text-2" [ngClass]="{'show': isText2Visible && isImgVisible}">
-              Prediligo un approccio che si basa sull’empatia, sull’ascolto del paziente e sulla comprensione non solo
-              della
-              sintomatologia riferita, ma anche di tutti gli aspetti che possono concorrere nella sua manifestazione, al
-              fine di
-              ideare un piano di trattamento incentrato sul singolo individuo. Il piano di trattamento sarà quindi unico e
-              su
-              misura, in base alle valutazioni effettuate e le esigenze del paziente, in quanto considero di fondamentale
-              importanza il riconoscimento e la valorizzazione dell’individualità e dell’unicità della persona.
-            </p>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col flex-center">
+          <p class="text-3" [ngClass]="{'show': isText3Visible && isImgVisible}">Mi sono avvicinata a questa disciplina
+            non solo per la volontà di aiutare il prossimo, ma anche per l’amore e la passione per il corpo umano e per
+            i meccanismi alla base del suo funzionamento. Il fine ultimo del trattamento osteopatico è quello di
+            favorire il recupero della salute e il conseguimento del benessere globale della persona, migliorandone così
+            la qualità di vita e aiutandola a ritrovare un equilibrio.</p>
         </div>
-        <div class="row">
-          <div class="col flex-center">
-            <p class="text-3" [ngClass]="{'show': isText3Visible && isImgVisible}">Mi sono avvicinata a questa disciplina
-              non solo per la volontà di aiutare il prossimo, ma anche per l’amore e la passione per il corpo umano e per
-              i meccanismi alla base del suo funzionamento. Il fine ultimo del trattamento osteopatico è quello di
-              favorire il recupero della salute e il conseguimento del benessere globale della persona, migliorandone così
-              la qualità di vita e aiutandola a ritrovare un equilibrio.</p>
-          </div>
-          <div class="col"></div>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col flex-center">
-            <p class="text-4" [ngClass]="{'show': isText4Visible && isImgVisible}">
-              Inoltre credo fermamente nell’importanza del costante aggiornamento attraverso la formazione al fine di
-              garantire ad ogni paziente la miglior cura possibile ed è per questo motivo che attualmente sto svolgendo un
-              Master in osteopatia pediatrica e sportiva presso la ICOM - International College of Osteopathic Medicine -
-              e durante il percorso formativo ho seguito un corso extra-curricolare sull’applicazione dei Kinesiotaping.
-            </p>
-          </div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col flex-center">
+          <p class="text-4" [ngClass]="{'show': isText4Visible && isImgVisible}">
+            Inoltre credo fermamente nell’importanza del costante aggiornamento attraverso la formazione al fine di
+            garantire ad ogni paziente la miglior cura possibile ed è per questo motivo che attualmente sto svolgendo un
+            Master in osteopatia pediatrica e sportiva presso la ICOM - International College of Osteopathic Medicine -
+            e durante il percorso formativo ho seguito un corso extra-curricolare sull’applicazione dei Kinesiotaping.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- SEZIONE STUDIO -->
 <section class="first-section-2" [ngClass]="{'show': isStudioVisible}">
-  <div class="background-image" [ngClass]="{'show': isStudioVisible}"></div>
-  <div class="text-container">
-    <p>Contenuto della sezione Studio</p>
+  <div class="container">
+    <div class="background-image" [ngClass]="{'show': isStudioVisible}"></div>
+    <div class="text-container">
+      <div class="row">
+        <div class="col flex-center">
+          <p class="studio-text-1" [ngClass]="{'show': isStudioText1Visible && isStudioVisible}">
+            Ricevo nel mio studio personale a Rho (MI) in Via Fiume 2.</p>
+        </div>
+        <div class="col">
+          <img class="img-1" src="../assets/images/e3e85ad847ffeccfe416803b3efa63aa.jpeg"
+            [ngClass]="{'show': isStudioImg1Visible && isStudioVisible}">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <img class="img-1" src="../assets/images/e3e85ad847ffeccfe416803b3efa63aa.jpeg"
+            [ngClass]="{'show': isStudioImg1Visible && isStudioVisible}">
+        </div>
+        <div class="col flex-center">
+          <p class="studio-text-1" [ngClass]="{'show': isStudioText2Visible && isStudioVisible}">
+            In alternativa, offro la possibilità di visite domiciliari presso le vostre abitazioni.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -81,7 +102,12 @@
 <section class="bg-light-2" [ngClass]="{'show': isContactsVisible}">
   <div class="background-image-light" [ngClass]="{'show': isContactsVisible}"></div>
   <div class="text-container">
-    <p>Contenuto della sezione Contatti</p>
+    <p>Per prenotare una visita:</p>
+    <ul>
+      <li>chiara.rouibah@eccecceccec</li>
+      <li>333444556677</li>
+      <li>Profilo mio dottore</li>
+    </ul>
   </div>
 </section>
 
