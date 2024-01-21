@@ -1,3 +1,10 @@
+<!-- NAVBAR -->
+<nav [ngClass]="{'show': isNavbarVisible}">
+  <a href="#about">Su di me</a>
+  <a href="#studio">Dove ricevo</a>
+  <a href="#prenota">Prenota una visita</a>
+</nav>
+
 <!-- PRIMA SEZIONE -->
 <section class="first-section" [ngClass]="{'show': isBackgroundVisible}">
   <div class="background-image" [ngClass]="{'show': isBackgroundVisible}"></div>
@@ -6,7 +13,7 @@
 </section>
 
 <!-- SEZIONE ABOUT -->
-<section class="bg-light-1" [ngClass]="{'show': isAboutVisible}">
+<section id="about" class="bg-light-1" [ngClass]="{'show': isAboutVisible}">
   <div class="container">
     <div class="background-image-light" [ngClass]="{'show': isAboutVisible}"></div>
     <div class="text-container">
@@ -70,7 +77,7 @@
 </section>
 
 <!-- SEZIONE STUDIO -->
-<section class="first-section-2" [ngClass]="{'show': isStudioVisible}">
+<section id="studio" class="first-section-2" [ngClass]="{'show': isStudioVisible}">
   <div class="container">
     <div class="background-image" [ngClass]="{'show': isStudioVisible}"></div>
     <div class="text-container">
@@ -99,7 +106,7 @@
 </section>
 
 <!-- SEZIONE CONTATTI -->
-<section class="bg-light-2" [ngClass]="{'show': isContactsVisible}">
+<section id="prenota" class="bg-light-2" [ngClass]="{'show': isContactsVisible}">
   <div class="background-image-light" [ngClass]="{'show': isContactsVisible}"></div>
   <div class="text-container">
     <p>Per prenotare una visita:</p>

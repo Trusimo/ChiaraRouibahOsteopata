@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   isBackgroundVisible: boolean = false;
   isH1Visible: boolean = false;
   isH2Visible: boolean = false;
+  isNavbarVisible : boolean = false;
   isAboutVisible: boolean = false;
   isStudioVisible: boolean = false;
   isContactsVisible: boolean = false;
@@ -39,6 +40,7 @@ export class AppComponent implements OnInit {
 
     setTimeout(() => {
       this.isH2Visible = true;
+      this.isNavbarVisible = true;
     }, 2000)
     
   }
@@ -94,5 +96,9 @@ export class AppComponent implements OnInit {
     if (!this.isStudioImg1Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
       this.isStudioImg1Visible = true;
     }
+  }
+
+  toggleNavbar() {
+    this.isNavbarVisible = !this.isNavbarVisible;
   }
 }

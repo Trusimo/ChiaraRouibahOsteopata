@@ -11,6 +11,38 @@ body {
     src: local(AbhayaLibre), url(../src/assets/fonts/AbhayaLibre-Regular.ttf);
 }
 
+nav {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(-30px);
+}
+
+nav.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0 15px;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: #457692;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #457692;
+    box-shadow: inset 220px 0 0 0 #fff;
+    ;
+}
+
 @font-face {
     font-family: 'Amsterdam';
     src: local('Amsterdam'), url('../src/assets/fonts/Amsterdam.ttf') format('truetype');
@@ -115,6 +147,10 @@ h2.show {
     background-color: #5A95B6;
 }
 
+.bg-light-2 {
+    height: 100vh;
+}
+
 .bg-light-1.show,
 .bg-light-2.show {
     opacity: 1;
@@ -146,28 +182,35 @@ h2.show {
     opacity: 1;
 }
 
-.text-1, .text-2, .text-3, .text-4 {
+.text-1,
+.text-2,
+.text-3,
+.text-4 {
     font-size: 20px;
 }
 
-.text-1, .text-3 {
+.text-1,
+.text-3 {
     opacity: 0;
     width: 70%;
     transition: opacity 1s ease, transform 2.3s ease;
 }
 
-.text-1.show, .text-3.show {
+.text-1.show,
+.text-3.show {
     opacity: 1;
     transform: translateX(70px);
 }
 
-.text-2, .text-4 {
+.text-2,
+.text-4 {
     opacity: 0;
     width: 70%;
     transition: opacity 1s ease, transform 2.3s ease;
 }
 
-.text-2.show, .text-4.show {
+.text-2.show,
+.text-4.show {
     opacity: 1;
     transform: translateX(-70px);
 }
@@ -216,24 +259,31 @@ h2.show {
         background-size: 300px;
     }
 
-    .text-1, .text-2, .text-3, .text-4 {
+    .text-1,
+    .text-2,
+    .text-3,
+    .text-4 {
         font-size: 16px;
-    }    
+    }
 
-    .text-1, .text-3 {
+    .text-1,
+    .text-3 {
         width: 300px;
     }
 
-    .text-1.show, .text-3.show {
+    .text-1.show,
+    .text-3.show {
         opacity: 1;
         transform: translateX(40px);
     }
 
-    .text-2, .text-4 {
+    .text-2,
+    .text-4 {
         width: 300px;
     }
 
-    .text-2.show, .text-4.show {
+    .text-2.show,
+    .text-4.show {
         opacity: 1;
         transform: translateX(-40px);
     }
@@ -244,19 +294,19 @@ h2.show {
         transition: opacity 2.3s ease, transform 2.3s ease;
         padding-top: 70px;
     }
-    
+
     .studio-text-1.show {
         opacity: 1;
         transform: translateY(-70px);
     }
-    
+
     .img-1 {
         opacity: 0;
         width: 200px;
         margin-top: -150px;
         transition: opacity 2.3s ease, transform 2.3s ease;
     }
-    
+
     .img-1.show {
         opacity: 1;
         transform: translateY(150px);
