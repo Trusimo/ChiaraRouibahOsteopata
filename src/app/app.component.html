@@ -1,8 +1,24 @@
 <!-- NAVBAR -->
-<nav [ngClass]="{'show': isNavbarVisible}">
+<nav class="nav-desktop" [ngClass]="{'show': isNavbarVisible}">
   <a href="#about">Su di me</a>
   <a href="#studio">Dove ricevo</a>
   <a href="#prenota">Prenota una visita</a>
+</nav>
+
+<nav class="nav-mobile" [ngClass]="{'show': isNavbarVisible}">
+  <ul class="navlist" [ngClass]="{'show-nav': visible, 'hide-nav': !visible}">
+    <li><a href="#about">Su di me</a></li>
+    <li><a href="#studio">Dove ricevo</a></li>
+    <li><a href="#prenota">Prenota una visita</a></li>
+  </ul>
+  <div class="flex-end">
+    <div id="nav-icon3" (click)="clickEvent()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 </nav>
 
 <!-- PRIMA SEZIONE -->

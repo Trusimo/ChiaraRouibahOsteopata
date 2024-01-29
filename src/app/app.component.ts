@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   isBackgroundVisible: boolean = false;
   isH1Visible: boolean = false;
   isH2Visible: boolean = false;
-  isNavbarVisible : boolean = false;
+  isNavbarVisible: boolean = false;
   isAboutVisible: boolean = false;
   isStudioVisible: boolean = false;
   isContactsVisible: boolean = false;
@@ -22,8 +22,9 @@ export class AppComponent implements OnInit {
   isStudioText1Visible: boolean = false;
   isStudioText2Visible: boolean = false;
   isStudioImg1Visible: boolean = false;
+  visible: boolean = false;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef) { }
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -42,7 +43,7 @@ export class AppComponent implements OnInit {
       this.isH2Visible = true;
       this.isNavbarVisible = true;
     }, 2000)
-    
+
   }
 
   @HostListener("window:scroll", [])
@@ -72,7 +73,7 @@ export class AppComponent implements OnInit {
     if (!this.isText1Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
       this.isText1Visible = true;
     }
-    
+
     if (!this.isText2Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
       this.isText2Visible = true;
     }
@@ -98,7 +99,11 @@ export class AppComponent implements OnInit {
     }
   }
 
-  toggleNavbar() {
-    this.isNavbarVisible = !this.isNavbarVisible;
+  clickEvent() {
+    this.visible = !this.visible;
+    const icona = document.getElementById("nav-icon3");
+      if (icona) {
+        icona.classList.toggle("open");
+      }
   }
 }
