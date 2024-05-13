@@ -62,8 +62,7 @@ nav a:hover {
     justify-content: center;
 }
 
-.first-section,
-.first-section-2 {
+.first-section, .first-section-3{
     position: relative;
     display: flex;
     justify-content: center;
@@ -74,8 +73,20 @@ nav a:hover {
     z-index: 1;
 }
 
+.first-section-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+    padding: 30px 0;
+}
+
 .first-section.show,
-.first-section-2.show {
+.first-section-2.show,
+.first-section-3.show {
     opacity: 1;
 }
 
@@ -138,7 +149,8 @@ h2.show {
 }
 
 .bg-light-1,
-.bg-light-2 {
+.bg-light-2,
+.bg-light-3 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -152,7 +164,8 @@ h2.show {
 }
 
 .bg-light-1.show,
-.bg-light-2.show {
+.bg-light-2.show,
+.bg-light-3 {
     opacity: 1;
 }
 
@@ -165,7 +178,41 @@ h2.show {
 }
 
 .text-container {
+    position: relative;
     z-index: 2;
+}
+
+a {
+    color: white;
+}
+
+/* reviews */
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+}
+.container-review {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+}
+.review {
+    margin-bottom: 20px;
+}
+.review h2 {
+    color: #fff;
+}
+.review p {
+    color: #fff;
+}
+.rating {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f8f8f8;
+    color: #333;
+    border-radius: 5px;
 }
 
 /* ANIMAZIONI TESTI */
@@ -222,9 +269,22 @@ h2.show {
     padding-top: 70px;
 }
 
+.carousel {
+    opacity: 0;
+    transition: opacity 2.3s ease, transform 2.3s ease;
+    padding-bottom: 70px;
+}
+
 .studio-text-1.show {
     opacity: 1;
     transform: translateY(-70px);
+    margin-bottom: -100px
+}
+
+.carousel.show {
+    opacity: 1;
+    transform: translateY(70px);
+    margin-bottom: 40px
 }
 
 .img-1 {
@@ -246,6 +306,12 @@ h2.show {
 
 .nav-desktop {
     display: block
+}
+
+.img-carousel {
+    width: 600px;
+    height: 600px;
+    border-radius: 9px
 }
 
 @media (max-width: 768px) {
@@ -428,5 +494,16 @@ h2.show {
         top: 18px;
         width: 0%;
         left: 50%;
+    }
+
+    .img-carousel {
+        width: 400px;
+        height: 500px;
+        border-radius: 9px
+    }
+
+    .review-carousel {
+        width: 400px;
+        height: 200px;
     }
 }
