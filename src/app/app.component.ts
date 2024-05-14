@@ -26,11 +26,11 @@ export class AppComponent implements OnInit {
   isStudioImg1Visible: boolean = false;
   visible: boolean = false;
   reviewsArray = [
-    { name: 'Marta L', content: "Mi sono recata presso il suo studio per un problema di sciatica che mi portavo dietro da anni. Già dal primo trattamento il dolore è notevolmente diminuito. Molto professionale, disponibile e precisa nelle spiegazioni. La consiglio vivamente!" },
-    { name: 'Gx', content: 'Dottoressa giovane molto precisa e preparata, fornisce spiegazioni comprensive anche a chi non è del mestiere. Ero scettica ma devo ammettere che il trattamento è stato davvero efficace. Ho ritrovato equilibrio, non ho più capogiri e i miei dolori alla cervicale scomparsi già dopo la prima seduta. La consiglio sicuramente a tutti e fidatevi è davvero bravissima.' },
-    { name: 'Stefania V', content: "Ottima esperienza! Già dopo la prima seduta la schiena è rinata e il dolore svanito. Abbiamo trattato anche la cicatrice del cesareo fatto da poco ed è cambiata radicalmente. Chiara è fantastica! Ci tornerò sicuramente quando avrò ancora bisogno. Grazie Chiara." },
-    { name: 'S.V.', content: "Sono andata da Chiara per un problema che mi portavo dietro da mesi ed è stata in grado di risolverlo in poche sedute. Inoltre, con la sua empatia, gentilezza e professionalità è stata in grado di mettermi subito a mio agio." },
-    { name: 'Fm', content: "Esaustiva, molto brava, gentile. Consiglio vivamente." }
+    "../assets/images/Review (1).png",
+    "../assets/images/Review (2).png",
+    "../assets/images/Review (3).png",
+    "../assets/images/Review (4).png",
+    "../assets/images/Review (5).png"
   ];
 
   constructor(private el: ElementRef) { }
@@ -124,5 +124,19 @@ export class AppComponent implements OnInit {
     if (icona) {
       icona.classList.toggle("open");
     }
+  }
+
+  activeIndex = 0; // Indice dell'elemento attivo nel carosello
+
+  setActiveIndex(index: number) {
+    this.activeIndex = index;
+  }
+
+  prev() {
+    this.activeIndex = (this.activeIndex - 1 + this.reviewsArray.length) % this.reviewsArray.length;
+  }
+
+  next() {
+    this.activeIndex = (this.activeIndex + 1) % this.reviewsArray.length;
   }
 }
