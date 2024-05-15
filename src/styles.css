@@ -62,7 +62,7 @@ nav a:hover {
     justify-content: center;
 }
 
-.first-section{
+.first-section {
     position: relative;
     display: flex;
     justify-content: center;
@@ -247,36 +247,22 @@ a {
 }
 
 
-h1, h3 {
+h1,
+h3 {
     font-weight: bold;
 }
 
 .text-1,
 .text-2,
 .text-3,
-.text-4,
-.text-5,
-.text-6,
-.text-7,
-.text-8,
-.text-9,
-.text-10,
-.text-11,
-.lista-prenota {
+.text-4 .lista-prenota {
     font-size: 20px;
 }
 
 .text-1,
 .text-3,
 .text-2,
-.text-4,
-.text-5,
-.text-6,
-.text-7,
-.text-8,
-.text-9,
-.text-10,
-.text-11  {
+.text-4 {
     opacity: 0;
     margin-left: -20px;
     width: 100%;
@@ -286,14 +272,7 @@ h1, h3 {
 .text-1.show,
 .text-3.show,
 .text-2.show,
-.text-4.show,
-.text-5.show,
-.text-6.show,
-.text-7.show,
-.text-8.show,
-.text-9.show,
-.text-10.show,
-.text-11.show {
+.text-4.show {
     opacity: 1;
     transform: translateX(20px);
 }
@@ -337,7 +316,7 @@ h1, h3 {
 
 .nav-mobile,
 .navlist {
-    display: none
+    display: none;
 }
 
 .nav-desktop {
@@ -350,13 +329,45 @@ h1, h3 {
     border-radius: 9px
 }
 
-.swiper-container {
-    width: 100%; /* Imposta la larghezza desiderata */
-    height: 400px; /* Imposta l'altezza desiderata */
+/* Stili per la navbar */
+.nav-desktop,
+.nav-mobile {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(-30px);
 }
 
-.swiper-slide {
-    text-align: center;
+.nav-desktop.show,
+.nav-mobile.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-desktop a,
+.nav-mobile a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0 15px;
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: #457692;
+    display: inline-block;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.nav-desktop a:hover,
+.nav-mobile a:hover {
+    color: #457692;
+    box-shadow: inset 220px 0 0 0 #fff;
+}
+
+/* Stili per la transizione */
+.nav-desktop.with-transition {
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .swiper-button-prev,
@@ -388,6 +399,8 @@ h1, h3 {
     h1.font-amsterdam {
         font-size: 45px;
     }
+
+    
 
     h2 {
         font-size: 30px;
@@ -452,16 +465,18 @@ h1, h3 {
     .flex-end {
         display: flex;
         justify-content: end;
-        padding-top: 50px;
-        padding-right: 20px;
+        padding: 20px 10px 20px 20px;
     }
 
     .navlist {
         list-style: none;
         position: absolute;
         text-align: left;
-        padding-left: 0;
-        padding-top: 20px;
+        padding: 10px 0;
+        margin-left: -10px;
+        background-color: #457692;
+        width: 100%;
+        border-bottom: 1px solid white;
     }
 
     .show-nav {
@@ -552,5 +567,11 @@ h1, h3 {
         width: 385px;
         height: 135px;
         border-radius: 9px
+    }
+
+    .small-h1 {
+        padding: 32px 0px 0px 20px;
+        margin-bottom: -50px;
+        font-size: 20px !important;
     }
 }
