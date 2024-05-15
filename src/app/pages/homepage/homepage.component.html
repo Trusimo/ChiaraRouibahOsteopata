@@ -1,0 +1,132 @@
+<!-- PRIMA SEZIONE -->
+<section class="first-section" [ngClass]="{'show': isBackgroundVisible}">
+    <div class="background-image" [ngClass]="{'show': isBackgroundVisible}"></div>
+    <h1 class="font-amsterdam" [ngClass]="{'show': isH1Visible}">Chiara Rouibah</h1>
+    <h2 [ngClass]="{'show': isH2Visible}">Osteopata</h2>
+</section>
+
+<!-- SEZIONE ABOUT -->
+<section id="about" class="bg-light-1" [ngClass]="{'show': isAboutVisible}">
+    <div class="container">
+        <div class="background-image-light" [ngClass]="{'show': isAboutVisible}"></div>
+        <div class="text-container">
+            <div class="flex-center">
+                <img class="chiara" src="../assets/images/e3e85ad847ffeccfe416803b3efa63aa.jpeg"
+                    [ngClass]="{'show': isImgVisible && isAboutVisible}">
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <p class="text-1" [ngClass]="{'show': isImgVisible}">Mi chiamo Chiara Rouibah e sono
+                        un’osteopata.
+                        Ho conseguito la laurea in osteopatia presso la International
+                        College of Osteopathic Medicine (ICOM) al termine di un percorso di studi della durata di cinque
+                        anni.
+                        Durante il
+                        mio percorso formativo oltre a seguire le lezioni teoriche e pratiche ho svolto più di 1300 ore
+                        di tirocinio
+                        pratico presso la clinica universitaria dove ho avuto la possibilità di interfacciarmi sin da
+                        subito con i
+                        pazienti di tutte le età e di acquisire così le conoscenze e competenze necessarie relative alla
+                        gestione
+                        del
+                        paziente nella sua globalità.</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col ">
+                    <p class="text-2" [ngClass]="{'show': isImgVisible}">
+                        Prediligo un approccio che si basa sull’empatia, sull’ascolto del paziente e sulla comprensione
+                        non solo
+                        della
+                        sintomatologia riferita, ma anche di tutti gli aspetti che possono concorrere nella sua
+                        manifestazione, al
+                        fine di
+                        ideare un piano di trattamento incentrato sul singolo individuo. Il piano di trattamento sarà
+                        quindi unico e
+                        su
+                        misura, in base alle valutazioni effettuate e le esigenze del paziente, in quanto considero di
+                        fondamentale
+                        importanza il riconoscimento e la valorizzazione dell’individualità e dell’unicità della
+                        persona.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <p class="text-3" [ngClass]="{'show': isImgVisible}">Mi sono avvicinata a questa disciplina
+                        non solo per la volontà di aiutare il prossimo, ma anche per l’amore e la passione per il corpo
+                        umano e per
+                        i meccanismi alla base del suo funzionamento. Il fine ultimo del trattamento osteopatico è
+                        quello di
+                        favorire il recupero della salute e il conseguimento del benessere globale della persona,
+                        migliorandone così
+                        la qualità di vita e aiutandola a ritrovare un equilibrio.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <p class="text-4" [ngClass]="{'show': isImgVisible}">
+                        Inoltre credo fermamente nell’importanza del costante aggiornamento attraverso la formazione al
+                        fine di
+                        garantire ad ogni paziente la miglior cura possibile ed è per questo motivo che attualmente sto
+                        svolgendo un
+                        Master in osteopatia pediatrica e sportiva presso la ICOM - International College of Osteopathic
+                        Medicine -
+                        e durante il percorso formativo ho seguito un corso extra-curricolare sull’applicazione dei
+                        Kinesiotaping.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEZIONE STUDIO -->
+<section id="studio" class="first-section-2" [ngClass]="{'show': isStudioVisible}">
+    <div class="container">
+        <div class="background-image" [ngClass]="{'show': isStudioVisible}"></div>
+        <div class="text-container">
+            <div class="text-center">
+                <p class="studio-text-1" [ngClass]="{'show': isStudioText1Visible && isStudioVisible}">
+                    Ricevo nel mio studio personale a Rho (MI) in Via Fiume 2.
+                </p>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+                [ngClass]="{'show': isStudioText1Visible && isStudioVisible}">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/IMG-20240408-WA0022.jpg" class="img-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/IMG-20240408-WA0021.jpg" class="img-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/IMG-20240408-WA0020.jpg" class="img-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/IMG-20240408-WA0024.jpg" class="img-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/IMG-20240408-WA0023.jpg" class="img-carousel" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="text-center">
+                <p class="studio-text-1 mb-1" [ngClass]="{'show': isStudioText2Visible && isStudioVisible}">
+                    Offro anche la possibilità di effettuare visite a domicilio.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,19 +1,21 @@
 import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-homepage',
+  templateUrl: './homepage.component.html',
+  styleUrls: ['./homepage.component.css']
 })
-export class AppComponent implements OnInit {
+export class HomepageComponent implements OnInit {
   isContentVisible: boolean = false;
   isBackgroundVisible: boolean = false;
   isH1Visible: boolean = false;
   isH2Visible: boolean = false;
   isNavbarVisible: boolean = false;
-  applyTransition : boolean = false;
   isAboutVisible: boolean = false;
   isStudioVisible: boolean = false;
+  isContactsVisible: boolean = false;
+  isOsteoVisible: boolean = false;
+  isReviewVisible: boolean = false;
   isImgVisible: boolean = false;
   isText1Visible: boolean = false; // New variable
   isText2Visible: boolean = false;
@@ -39,17 +41,10 @@ export class AppComponent implements OnInit {
       this.isH1Visible = true;
     }, 1500);
 
-    if (window.location.pathname === '/homepage') {
-      setTimeout(() => {
-        this.isH2Visible = true;
-        this.isNavbarVisible = true;
-        this.applyTransition = true;
-      }, 2000);
-    } else {
-      // Mostra la navbar senza transizione su altre pagine
+    setTimeout(() => {
       this.isH2Visible = true;
       this.isNavbarVisible = true;
-    }
+    }, 2000)
 
   }
 
@@ -98,14 +93,6 @@ export class AppComponent implements OnInit {
 
     if (!this.isStudioImg1Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
       this.isStudioImg1Visible = true;
-    }
-  }
-
-  clickEvent() {
-    this.visible = !this.visible;
-    const icona = document.getElementById("nav-icon3");
-    if (icona) {
-      icona.classList.toggle("open");
     }
   }
 }
