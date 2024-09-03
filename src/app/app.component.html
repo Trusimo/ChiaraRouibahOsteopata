@@ -1,6 +1,6 @@
 <!-- Navbar desktop -->
 <nav class="nav-desktop" [ngClass]="{'show': isNavbarVisible, 'with-transition': applyTransition}">
-  <a href="/homepage">Su di me</a>
+  <a href="/homepage">Home</a>
   <a href="/osteopatia">L'osteopatia</a>
   <a href="/contatti">Prenota una visita</a>
   <a href="/recensioni">Recensioni</a>
@@ -11,7 +11,7 @@
 <h1 class="font-amsterdam small-h1" [ngClass]="{'show': isNavbarVisible}">Chiara Rouibah</h1>
 <nav class="nav-mobile" [ngClass]="{'show': isNavbarVisible}">
   <ul class="navlist" [ngClass]="{'show-nav': visible, 'hide-nav': !visible}">
-    <li><a href="/homepage">Su di me</a></li>
+    <li><a href="/homepage">Home</a></li>
     <li><a href="/osteopatia">L'osteopatia</a></li>
     <li><a href="/contatti">Prenota una visita</a></li>
     <li><a href="/recensioni">Recensioni</a></li>
@@ -31,6 +31,10 @@
 <router-outlet></router-outlet>
 
 <!-- Altro contenuto della tua pagina -->
-<div class="trusimo">
-  Simone Trunfio 2024
-</div>
+<footer class="d-flex justify-content-between">
+  <h1 class="font-amsterdam-footer">Chiara Rouibah</h1>
+  <div class="d-flex flex-column align-items-start">
+    <a href="https://wa.me/message/K2P4AACHQEQWM1">WhatsApp</a>
+    <a href="mailto:chiara.rouibah98@gmail.com">chiara.rouibah98@gmail.com</a>
+  </div>
+</footer>

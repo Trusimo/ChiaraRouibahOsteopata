@@ -11,6 +11,7 @@ export class OsteopatiaComponent implements OnInit {
   isH1OsteoVisible: boolean = false;
   isContent1Visible: boolean = false;
   isContent2Visible: boolean = false;
+  isH2Visible: boolean = false;
 
   constructor() {}
 
@@ -28,8 +29,12 @@ export class OsteopatiaComponent implements OnInit {
     }, 1500);
 
     setTimeout(() => {
+      this.isH2Visible = true;
+    }, 2000);
+
+    setTimeout(() => {
       this.isContent2Visible = true;
-    }, 2000)
+    }, 2300)
   }
 
 }

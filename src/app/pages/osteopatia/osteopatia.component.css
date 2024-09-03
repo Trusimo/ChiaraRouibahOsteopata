@@ -1,3 +1,16 @@
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+img {
+    height: 220px;
+    border-radius: 20px;
+}
+
 .text-5,
 .text-6,
 .text-7,
@@ -46,4 +59,12 @@
 
 .bg-light-2.show  {
     opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width: 200px;
+        height: 120px;
+        border-radius: 20px;
+    }
 }

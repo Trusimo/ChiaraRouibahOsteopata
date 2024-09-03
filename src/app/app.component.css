@@ -1,0 +1,23 @@
+@media only screen and (min-width: 767px) {
+    .small-h1 {
+        display: none !important;
+    }
+}
+
+h1.font-amsterdam-footer {
+    opacity: 1;
+    font-family: 'Amsterdam';
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+footer {
+    padding: 20px;
+    z-index: 20;
+    position: relative;
+}
+
+.d-flex a {
+    text-decoration: none;
+}
