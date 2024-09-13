@@ -1,4 +1,6 @@
 import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,7 @@ export class AppComponent implements OnInit {
   isH1Visible: boolean = false;
   isH2Visible: boolean = false;
   isNavbarVisible: boolean = false;
-  applyTransition : boolean = false;
+  applyTransition: boolean = false;
   isAboutVisible: boolean = false;
   isStudioVisible: boolean = false;
   isImgVisible: boolean = false;
@@ -23,10 +25,18 @@ export class AppComponent implements OnInit {
   isStudioText2Visible: boolean = false;
   isStudioImg1Visible: boolean = false;
   visible: boolean = false;
+  home: boolean = true;
+  public href: string = "";
 
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef, private router: Router) { }
 
   ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.checkUrl();
+    });
+
     setTimeout(() => {
       this.isBackgroundVisible = true;
     }, 500);
@@ -106,6 +116,13 @@ export class AppComponent implements OnInit {
     const icona = document.getElementById("nav-icon3");
     if (icona) {
       icona.classList.toggle("open");
+    }
+  }
+
+  checkUrl() {
+    this.href = this.router.url;
+    if (this.href === '/homepage') {
+      this.home = false;
     }
   }
 }

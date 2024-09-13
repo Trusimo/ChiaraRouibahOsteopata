@@ -1,3 +1,6 @@
+h2 {
+    opacity: 1;
+}
 
 .background-image {
     position: absolute;
@@ -23,10 +26,7 @@
 
 .first-section-3 {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
     height: 90vh;
     z-index: 1;
 }

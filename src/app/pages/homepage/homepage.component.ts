@@ -25,6 +25,7 @@ export class HomepageComponent implements OnInit {
   isStudioText2Visible: boolean = false;
   isStudioImg1Visible: boolean = false;
   visible: boolean = false;
+  home: boolean = false;
 
   constructor(private el: ElementRef) { }
 

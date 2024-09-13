@@ -1,1 +1,102 @@
-<p>faq works!</p>
+<div class="container">
+    <h2 class="pb-4">Le domande più frequenti</h2>
+    <div class="faq-section">
+        <div class="faq-item">
+            <div class="faq-question" (click)="toggleFaq(0)">
+                <h3>Come si svolge la prima visita osteopatica?</h3>
+                <span class="arrow" [ngClass]="{ 'open': activeFaq === 0 }">&#9660;</span>
+            </div>
+            <div class="faq-answer" *ngIf="activeFaq === 0">
+                La prima visita osteopatica si divide in quattro parti:
+                <ol>
+                    <li>
+                        Anamnesi: è il primo colloquio con il paziente, durante il quale verranno rivolte alcune domande
+                        per
+                        comprendere al meglio il sintomo e le sue cause;
+                    </li>
+                    <li>
+                        Test: in base a quanto emerso durante l’anamnesi, se necessario, verranno svolti dei test
+                        specifici
+                        (semeiotica medica, test neurologici o test ortopedici) in modo da poter escludere eventuali
+                        patologie
+                        non di pertinenza osteopatica;
+                    </li>
+                    <li>
+                        Esame obiettivo: consiste nell’osservazione della postura del paziente al fine di individuare le
+                        zone
+                        che dovranno essere trattate al fine di migliorare la sintomatologia;
+                    </li>
+                    <li>
+                        Trattamento: si baserà sulle valutazioni effettuate durante le prime fasi della visita. Il
+                        trattamento
+                        osteopatico consiste in una serie di tecniche manuali volte a migliorare le aree disfunzionali
+                        e,
+                        conseguentemente, il sintomo riferito.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" (click)="toggleFaq(1)">
+                <h3>Cosa devo indossare per la visita?</h3>
+                <span class="arrow" [ngClass]="{ 'open': activeFaq === 1 }">&#9660;</span>
+            </div>
+            <div class="faq-answer" *ngIf="activeFaq === 1">
+                <p>
+                    È consigliato un abbigliamento comodo come magliette o pantaloni che possono essere sollevati o
+                    tolti facilmente. Se ti senti a disagio a togliere gli indumenti e rimanere in intimo portati dietro
+                    un pantaloncino e una canottiera.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" (click)="toggleFaq(2)">
+                <h3>Quanti trattamenti occorrono?</h3>
+                <span class="arrow" [ngClass]="{ 'open': activeFaq === 2 }">&#9660;</span>
+            </div>
+            <div class="faq-answer" *ngIf="activeFaq === 2">
+                <p>
+                    Dipende! Non esiste una risposta univoca a questa domanda, in quanto ogni storia clinica è unica e a
+                    sé stante e ogni paziente necessità di un percorso specifico e su misura per lui. Il piano di
+                    trattamento verrà stabilito e comunicato durante le prime sedute, tenendo in considerazione la
+                    storia clinica, gli obiettivi e le necessità del paziente e le risposte al trattamento;
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" (click)="toggleFaq(3)">
+                <h3>Ogni quanto effettuare un trattamento?</h3>
+                <span class="arrow" [ngClass]="{ 'open': activeFaq === 3 }">&#9660;</span>
+            </div>
+            <div class="faq-answer" *ngIf="activeFaq === 3">
+                <p>
+                    Tendenzialmente i primi 2-3 trattamenti saranno a una distanza di una settimana l’uno dall’altro,
+                    dopodiché gradualmente si passerà a delle sedute più distanziate (ogni due settimane, tre settimane
+                    ecc…). Tuttavia, la distanza tra le sedute dipende dalla sintomatologia riferita, per alcune persone
+                    saranno sufficienti meno sedute e più distanziate, mentre per altri saranno necessarie più sedute
+                    settimanali.
+                    Al raggiungimento dell’obiettivo a breve termine potranno essere effettuate delle sedute di
+                    controllo, volte a prevenire delle ricadute e a mantenere lo stato di salute e benessere raggiunto.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" (click)="toggleFaq(4)">
+                <h3>Quanto tempo dura un trattamento?</h3>
+                <span class="arrow" [ngClass]="{ 'open': activeFaq === 4 }">&#9660;</span>
+            </div>
+            <div class="faq-answer" *ngIf="activeFaq === 4">
+                <p>
+                    La prima visita osteopatica ha una durata di circa 60-80 minuti, in quanto comprende la fase di
+                    valutazione iniziale. Le visite di controllo, invece, hanno una durata di circa 45-60 minuti. Per le
+                    sedute osteopatiche pediatriche la prima visita avrà una durata di 50-60 minuti, mentre le visite di
+                    controllo hanno una durata di 30-45 minuti.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

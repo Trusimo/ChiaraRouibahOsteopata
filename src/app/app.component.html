@@ -8,7 +8,7 @@
 </nav>
 
 <!-- Navbar mobile -->
-<h1 class="font-amsterdam small-h1" [ngClass]="{'show': isNavbarVisible}">Chiara Rouibah</h1>
+<h1 class="font-amsterdam small-h1" [ngClass]="{'show': isNavbarVisible && home}" *ngIf="home">Chiara Rouibah Osteopata</h1>
 <nav class="nav-mobile" [ngClass]="{'show': isNavbarVisible}">
   <ul class="navlist" [ngClass]="{'show-nav': visible, 'hide-nav': !visible}">
     <li><a href="/homepage">Home</a></li>
@@ -27,8 +27,12 @@
   </div>
 </nav>
 
+<body>
 <!-- Router Outlet per il contenuto dinamico -->
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>  
+</body>
 
 <!-- Altro contenuto della tua pagina -->
 <footer class="d-flex justify-content-between">

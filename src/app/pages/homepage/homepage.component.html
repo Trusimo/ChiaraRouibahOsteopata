@@ -1,8 +1,9 @@
 <!-- PRIMA SEZIONE -->
 <section class="first-section" [ngClass]="{'show': isBackgroundVisible}">
     <div class="background-image" [ngClass]="{'show': isBackgroundVisible}"></div>
-    <h1 class="font-amsterdam" [ngClass]="{'show': isH1Visible}">Chiara Rouibah</h1>
-    <h2 [ngClass]="{'show': isH2Visible}">Osteopata</h2>
+    <h1 class="font-amsterdam" [ngClass]="{'show': isH1Visible}">Chiara Rouibah<br>
+        <span class="font-normal">Osteopata</span></h1>
+    <!-- <h2 [ngClass]="{'show': isH2Visible}">Osteopata</h2> -->
 </section>
 
 <!-- SEZIONE ABOUT -->
@@ -16,6 +17,7 @@
             </div>
             <div class="row">
                 <div class="col ">
+                    <h2 [ngClass]="{'show': isImgVisible}">Osteopata a Rho</h2>
                     <p class="text-1" [ngClass]="{'show': isImgVisible}">Mi chiamo Chiara Rouibah e sono
                         un’osteopata.
                         Ho conseguito la laurea presso la International College of Osteopathic Medicine (ICOM) al termine di un percorso di studi quinquennale.
