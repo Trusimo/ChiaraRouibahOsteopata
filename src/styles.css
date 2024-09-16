@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     background-color: #457692;
     color: white;
-    font-family: 'AbhayaLibre';
-    src: local(AbhayaLibre), url(../src/assets/fonts/AbhayaLibre-Regular.ttf);
+    font-family: 'Montserrat';
 }
 
 nav {
-    color: #fff;
+    color: #cfdce4;
     padding: 10px;
     text-align: center;
     opacity: 0;
@@ -26,14 +27,13 @@ nav.show {
 }
 
 nav a {
-    color: #fff;
+    color: #cfdce4;
     text-decoration: none;
     padding: 0 15px;
     margin: 0 15px;
     transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
     font-size: 24px;
     border-radius: 8px;
-    background-color: #457692;
     display: inline-block;
 }
 
@@ -125,7 +125,7 @@ nav a:hover {
     z-index: 0;
 }
 
-h1.font-amsterdam {
+h2.font-amsterdam {
     font-family: 'Amsterdam';
     font-size: 40px;
     font-weight: 100;
@@ -135,7 +135,7 @@ h1.font-amsterdam {
     transition: opacity 1s ease;
 }
 
-h1.font-amsterdam.show {
+h2.font-amsterdam.show {
     opacity: 1;
 }
 
@@ -344,21 +344,21 @@ h3 {
 
 .nav-desktop a,
 .nav-mobile a {
-    color: #fff;
+    color: #457692;
     text-decoration: none;
     padding: 0 15px;
     margin: 0 15px;
     font-size: 24px;
     border-radius: 8px;
-    background-color: #457692;
+    background-color: #cfdce4;
     display: inline-block;
     transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
 
 .nav-desktop a:hover,
 .nav-mobile a:hover {
-    color: #457692;
-    box-shadow: inset 220px 0 0 0 #fff;
+    color: #fff;
+    box-shadow: inset 251px 0 0 0 #457692;
 }
 
 /* Stili per la transizione */
@@ -394,6 +394,9 @@ h3 {
 
     h1.font-amsterdam {
         font-size: 32px;
+        font-family: 'Amsterdam';
+        font-style: italic;
+        font-weight: normal;
     }
 
     h2 {
@@ -401,10 +404,6 @@ h3 {
         margin-top: 30px;
     }
 
-    .background-image,
-    .background-image-light {
-        background-size: 300px;
-    }
 
     .text-1,
     .text-3,
@@ -471,6 +470,11 @@ h3 {
         background-color: #457692;
         width: 100%;
         border-bottom: 1px solid white;
+    }
+
+    .nav-mobile a {
+        color: white;
+        background-color:unset
     }
 
     .show-nav {
@@ -564,7 +568,7 @@ h3 {
     }
 
     .small-h1 {
-        padding: 32px 0px 0px 20px;
+        padding: 17px 0px 0px 20px;
         margin-bottom: -50px;
         font-size: 20px !important;
     }

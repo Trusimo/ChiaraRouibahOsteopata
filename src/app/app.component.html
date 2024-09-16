@@ -8,8 +8,9 @@
 </nav>
 
 <!-- Navbar mobile -->
-<h1 class="font-amsterdam small-h1" [ngClass]="{'show': isNavbarVisible && home}" *ngIf="home">Chiara Rouibah Osteopata</h1>
-<nav class="nav-mobile" [ngClass]="{'show': isNavbarVisible}">
+<nav class="nav-mobile d-flex justify-content-between" [ngClass]="{'show': isNavbarVisible}">
+  <img class="logo" src="../assets/images/logo2.jpeg" alt="" [ngClass]="{'show': isNavbarVisible && home}" *ngIf="home">
+  <div *ngIf="!home"></div>
   <ul class="navlist" [ngClass]="{'show-nav': visible, 'hide-nav': !visible}">
     <li><a href="/homepage">Home</a></li>
     <li><a href="/osteopatia">L'osteopatia</a></li>

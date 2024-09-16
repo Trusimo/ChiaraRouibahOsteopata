@@ -47,3 +47,20 @@ footer {
 body>main {
     min-height: calc(100vh - 110px);
 }
+
+.font-normal {
+    font-family: 'AbhayaLibre';
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-desktop {
+    background-color:#cfdce4;
+    width: 100%;
+}
