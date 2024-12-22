@@ -3,3 +3,11 @@
     font-style: normal;
     text-transform: uppercase;
 }
+
+.onda {
+    width: 100%;
+    height: 100%;
+    background-color: #497c94; /* Colore dell'onda */
+    clip-path: ellipse(150% 60% at 50% 50%);
+    height: 100px;
+}

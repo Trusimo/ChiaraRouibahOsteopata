@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { OsteopatiaComponent } from './pages/osteopatia/osteopatia.component';
@@ -12,7 +11,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
-    AppComponent,
     HomepageComponent,
     OsteopatiaComponent,
     FaqComponent,
@@ -21,10 +19,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    AppRoutingModule  ],
+  providers: []
 })
 export class AppModule { }

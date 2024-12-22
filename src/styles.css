@@ -162,7 +162,7 @@ h2.show {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #5A95B6;
+    background-color: #cfdce4;
 }
 
 .bg-light-3 {
@@ -180,7 +180,7 @@ h2.show {
     color: white;
     text-align: right;
     padding: 10px;
-    background-color: #5A95B6;
+    background-color: #497c99;
 }
 
 .text-container {
@@ -316,7 +316,9 @@ h3 {
 }
 
 .nav-desktop {
-    display: block
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img-carousel {

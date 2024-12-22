@@ -1,9 +1,15 @@
 import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, RouterModule } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [FormsModule, CommonModule, RouterModule, FontAwesomeModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -27,6 +33,8 @@ export class AppComponent implements OnInit {
   visible: boolean = false;
   home: boolean = true;
   public href: string = "";
+  faIg= faInstagram;
+  faWa= faWhatsapp;
 
   constructor(private el: ElementRef, private router: Router) { }
 

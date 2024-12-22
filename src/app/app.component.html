@@ -1,15 +1,15 @@
 <!-- Navbar desktop -->
-<nav class="nav-desktop d-flex justify-content-between" [ngClass]="{'show': isNavbarVisible, 'with-transition': applyTransition}">
+<nav class="nav-desktop" [ngClass]="{'show': isNavbarVisible, 'with-transition': applyTransition}">
   <div></div>
   <div>
     <a href="/homepage">Home</a>
     <a href="/osteopatia">L'osteopatia</a>
     <a href="/contatti">Prenota una visita</a>
-    <a href="/recensioni">Recensioni</a>
     <a href="/faq">FAQ</a>
   </div>
-  <div class="d-flex justify-content-center gap-2">
-    
+  <div class="d-flex justify-content-center gap-3">
+    <fa-icon [icon]="faWa" size="3x"></fa-icon>
+    <fa-icon [icon]="faIg" size="3x"></fa-icon>
   </div>
 </nav>
 
@@ -21,8 +21,10 @@
     <li><a href="/homepage">Home</a></li>
     <li><a href="/osteopatia">L'osteopatia</a></li>
     <li><a href="/contatti">Prenota una visita</a></li>
-    <li><a href="/recensioni">Recensioni</a></li>
     <li><a href="/faq">FAQ</a></li>
+    <li class="px-4 pt-2 d-flex justify-content-start gap-3"><fa-icon class="icon-mobile" [icon]="faWa" size="2x"></fa-icon>
+      <fa-icon class="icon-mobile"  [icon]="faIg" size="2x"></fa-icon>
+    </li>
   </ul>
   <div class="flex-end">
     <div id="nav-icon3" (click)="clickEvent()">
@@ -46,6 +48,6 @@
   <h1 class="font-amsterdam-footer">Chiara Rouibah</h1>
   <div class="d-flex flex-column align-items-start">
     <a href="https://wa.me/message/K2P4AACHQEQWM1">WhatsApp</a>
-    <a href="mailto:chiara.rouibah98@gmail.com">chiara.rouibah98@gmail.com</a>
+    <a href="mailto:chiara.rouibah98@gmail.com">chiara.rouibah98&#64;gmail.com</a>
   </div>
 </footer>

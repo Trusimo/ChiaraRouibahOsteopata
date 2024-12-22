@@ -40,6 +40,15 @@ footer {
     margin-top: auto;
 }
 
+fa-icon {
+    color: #457692;
+    cursor: pointer;
+}
+
+.icon-mobile {
+    color: white;
+}
+
 .d-flex a {
     text-decoration: none;
 }
