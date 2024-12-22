@@ -8,6 +8,7 @@ import { OsteopatiaComponent } from './pages/osteopatia/osteopatia.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { ContattiComponent } from './pages/contatti/contatti.component';
 import { RecensioniComponent } from './pages/recensioni/recensioni.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RecensioniComponent } from './pages/recensioni/recensioni.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,16 @@
 <!-- Navbar desktop -->
-<nav class="nav-desktop" [ngClass]="{'show': isNavbarVisible, 'with-transition': applyTransition}">
-  <a href="/homepage">Home</a>
-  <a href="/osteopatia">L'osteopatia</a>
-  <a href="/contatti">Prenota una visita</a>
-  <a href="/recensioni">Recensioni</a>
-  <a href="/faq">FAQ</a>
+<nav class="nav-desktop d-flex justify-content-between" [ngClass]="{'show': isNavbarVisible, 'with-transition': applyTransition}">
+  <div></div>
+  <div>
+    <a href="/homepage">Home</a>
+    <a href="/osteopatia">L'osteopatia</a>
+    <a href="/contatti">Prenota una visita</a>
+    <a href="/recensioni">Recensioni</a>
+    <a href="/faq">FAQ</a>
+  </div>
+  <div class="d-flex justify-content-center gap-2">
+    
+  </div>
 </nav>
 
 <!-- Navbar mobile -->
@@ -29,10 +35,10 @@
 </nav>
 
 <body>
-<!-- Router Outlet per il contenuto dinamico -->
-<main>
-  <router-outlet></router-outlet>
-</main>  
+  <!-- Router Outlet per il contenuto dinamico -->
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 </body>
 
 <!-- Altro contenuto della tua pagina -->
