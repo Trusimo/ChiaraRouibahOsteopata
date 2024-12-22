@@ -14,7 +14,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomepageComponent,
     OsteopatiaComponent,
     FaqComponent,
-    ContattiComponent,
     RecensioniComponent
   ],
   imports: [

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-osteopatia',
@@ -12,7 +12,8 @@ export class OsteopatiaComponent implements OnInit {
   isContent1Visible: boolean = false;
   isContent2Visible: boolean = false;
   isH2Visible: boolean = false;
-
+  showBackToTop: boolean = false;
+  
   constructor() {}
 
   ngOnInit(): void {
@@ -36,5 +37,21 @@ export class OsteopatiaComponent implements OnInit {
       this.isContent2Visible = true;
     }, 2300)
   }
+
+    // Metodo per scrollare verso l'alto
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Scroll liscio verso l'alto
+      });
+    }
+  
+    // Ascolta lo scroll della finestra
+    @HostListener("window:scroll", [])
+    onWindowScroll() {
+      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      // Il pulsante apparirà quando lo scroll supera i 300px
+      this.showBackToTop = scrollPos > 500;
+    }
 
 }

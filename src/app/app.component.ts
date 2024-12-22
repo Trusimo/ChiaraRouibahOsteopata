@@ -35,6 +35,7 @@ export class AppComponent implements OnInit {
   public href: string = "";
   faIg= faInstagram;
   faWa= faWhatsapp;
+  showBackToTop: boolean = false;
 
   constructor(private el: ElementRef, private router: Router) { }
 
@@ -117,6 +118,15 @@ export class AppComponent implements OnInit {
     if (!this.isStudioImg1Visible && scrollPosition >= aboutSectionOffset - windowHeight / 2) {
       this.isStudioImg1Visible = true;
     }
+    const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.showBackToTop = scrollPos > 500;
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Scroll liscio verso l'alto
+    });
   }
 
   clickEvent() {

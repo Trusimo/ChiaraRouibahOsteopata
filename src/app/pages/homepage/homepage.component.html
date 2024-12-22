@@ -5,54 +5,126 @@
     <h2 class="font-normal" [ngClass]="{'show': isH2Visible}">OSTEOPATA</h2>
 </section>
 
-<div class="wave"></div>
+<div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#cfdce4" fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+</div>
 <!-- SEZIONE ABOUT -->
-<section id="about" class="bg-light-1" [ngClass]="{'show': isAboutVisible}">
+<section id="about py-3" class="bg-light-1" [ngClass]="{'show': isAboutVisible}">
     <div class="container">
         <div class="" [ngClass]="{'show': isAboutVisible}"></div>
         <div class="text-container">
-            <div class="flex-center">
-                <img class="chiara" src="../assets/images/e3e85ad847ffeccfe416803b3efa63aa.jpeg"
-                    [ngClass]="{'show': isImgVisible && isAboutVisible}">
-            </div>
             <div class="row">
-                <div class="col ">
+                <div class="col">
                     <h1 [ngClass]="{'show': isImgVisible}">Osteopata a Rho</h1>
-                    <p class="text-1" [ngClass]="{'show': isImgVisible}">Mi chiamo Chiara Rouibah e sono
-                        un’osteopata.
-                        Ho conseguito la laurea presso la International College of Osteopathic Medicine (ICOM) al termine di un percorso di studi quinquennale.
-                        Durante il percorso formativo ho svolto più di 1300 ore di tirocinio
-                        pratico presso la clinica universitaria, dove ho avuto la possibilità di interfacciarmi sin da
-                        subito con
-                        pazienti di tutte le età e di acquisire così le conoscenze e competenze necessarie relative alla
-                        gestione
-                        del
-                        paziente nella sua globalità.</p>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col ">
-                    <p class="text-2" [ngClass]="{'show': isImgVisible}">
-                        Prediligo un approccio che si basa sull’empatia, sull’ascolto e sulla comprensione
-                        non solo
-                        della
-                        sintomatologia riferita, ma anche di tutti gli aspetti che concorrono nella sua
-                        manifestazione, al
-                        fine di
-                        ideare un piano di trattamento incentrato sul singolo individuo. Il piano di trattamento sarà
-                        quindi unico e
-                        su
-                        misura, in base alle valutazioni effettuate e le esigenze del paziente, in quanto considero di
-                        fondamentale
-                        importanza il riconoscimento e la valorizzazione dell’individualità e dell’unicità della
-                        persona.
+                    <p class="text-1" [ngClass]="{'show': isImgVisible}">Mi chiamo <b>Chiara Rouibah</b> e sono
+                        un’osteopata a
+                        Rho.
+                        Ho conseguito la <b>laurea e il titolo abilitante</b> presso
+                        <b>l’università ICOM Educational</b> al termine di un percorso
+                        di studi di 5 anni, durante i quali ho svolto anche più di
+                        1500 ore di tirocinio pratico presso la clinica universitaria.
                     </p>
+                    <p class="text-1 desktop" [ngClass]="{'show': isImgVisible}">Credo fortemente nell’importanza del
+                        costante
+                        aggiornamento attraverso la formazione continua al fine
+                        di poter garantire a ogni paziente la migliore cura
+                        possibile in base alle ultime conoscenze ed evidenze
+                        scientifiche. È per questo motivo che dopo la laurea:
+                        Ho conseguito il <b>Master of Science in osteopatia
+                            pediatrica e sportiva</b> presso la ICOM Educational;
+                        Ho seguito il corso sull’<b>applicazione del Kinesiotaping</b> tenuto dal Dott. Civardi Andrea;
+                        Sto svolgendo il Master in osteopatia pediatrica e neonatale presso l’<b>Accademia Italiana di
+                            Medicina Osteopatica (AIMO)</b>. </p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img class="chiara" src="../assets/images/e3e85ad847ffeccfe416803b3efa63aa.jpeg"
+                        [ngClass]="{'show': isImgVisible && isAboutVisible}">
                 </div>
             </div>
+            <p class="text-1 mobile" [ngClass]="{'show': isImgVisible}">Credo fortemente nell’importanza del costante
+                aggiornamento attraverso la formazione continua al fine
+                di poter garantire a ogni paziente la migliore cura
+                possibile in base alle ultime conoscenze ed evidenze
+                scientifiche. È per questo motivo che dopo la laurea:
+                Ho conseguito il <b>Master of Science in osteopatia
+                    pediatrica e sportiva</b> presso la ICOM Educational;
+                Ho seguito il corso sull’<b>applicazione del Kinesiotaping</b> tenuto dal Dott. Civardi Andrea;
+                Sto svolgendo il Master in osteopatia pediatrica e neonatale presso l’<b>Accademia Italiana di
+                    Medicina Osteopatica (AIMO)</b>. </p>
+            <p class="text-2" [ngClass]="{'show': isImgVisible}">
+                Prediligo un approccio basato sull’<b>empatia</b>, sull’ascolto del paziente e sulla comprensione della
+                sintomatologia riferita e di tutti gli aspetti che concorrono nella sua manifestazione.
+                Come osteopata il mio obiettivo è quello di mettere <b>l’individuo al centro</b> del mio ragionamento
+                clinico, ideando un <b>piano di trattamento personalizzato e su misura</b>, basato sulle valutazioni
+                effettuate e sulle esigenze del paziente stesso. Il fine ultimo del trattamento osteopatico è quello
+                di favorire il recupero o il mantenimento della salute e il conseguimento del <b>benessere globale</b>
+                della persona, migliorandone la qualità di vita e aiutandola a ritrovare un equilibrio.
+            </p>
         </div>
     </div>
 </section>
+
+<div class="bg-light-1 pt-3">
+    <div class="bg-image">
+        <div class="text-overlay">
+            OGNI PERCORSO È UNICO E SU MISURA PER IL SINGOLO INDIVIDUO ED È VOLTO AL RECUPERO DEL BENESSERE.
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center my-5">
+        <div class="col"></div>
+        <div class="col d-flex justify-content-center">
+            <button class="write-me-btn">
+                <span class="text-underline"><a target="_blank"
+                        href="https://wa.me/message/K2P4AACHQEQWM1">Scrivimi</a></span> per prenotare il tuo piano di
+                trattamento osteopatico
+                personalizzato a Rho
+            </button>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <h2 class="h2 text-center mb-4">Sono <b>specializzata</b> nel trattamento di</h2>
+    <div class="row">
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+            <img class="spec-img" src="../../../assets/images/foto_sito/immagine 2.webp" alt="">
+            <button class="spec-btn">
+                Donne in gravidanza
+            </button>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+            <img class="spec-img" src="../../../assets/images/foto_sito/immagine 3 .webp" alt="">
+            <button class="spec-btn">Bambini e neonati</button>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+            <img class="spec-img" src="../../../assets/images/foto_sito/immagine 5.webp" alt="">
+
+            <button class="spec-btn">Adulti e ragazzi</button>
+        </div>
+    </div>
+    <div class="row py-4">
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+            <img class="spec-img" src="../../../assets/images/foto_sito/immagine 4.webp" alt="">
+            <button class="spec-btn">
+                Atleti e sportivi
+            </button>
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+            <img class="spec-img" src="../../../assets/images/foto_sito/immagine 6.webp" alt="">
+            <button class="spec-btn">Anziani e terza età</button>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#457692" fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+</div>
+
 
 <!-- SEZIONE STUDIO -->
 <section id="studio" class="first-section-2" [ngClass]="{'show': isStudioVisible}">
@@ -61,8 +133,8 @@
         <div class="text-container">
             <div class="text-center">
                 <p class="studio-text-1" [ngClass]="{'show': isStudioText1Visible && isStudioVisible}">
-                    Ricevo nel mio studio in <br>
-                in Via Fiume 2 a Rho (MI).
+                    Ricevo su appuntamento nel mio <b>studio osteopatico</b> in
+                    a Rho, Via Fiume 2
                 </p>
             </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
@@ -94,11 +166,6 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
-            <div class="text-center">
-                <p class="studio-text-1 mb-1" [ngClass]="{'show': isStudioText2Visible && isStudioVisible}">
-                    Offro anche la possibilità di effettuare visite domiciliari.
-                </p>
             </div>
         </div>
     </div>

@@ -9,12 +9,15 @@ ul {
 }
 
 p a {
-    text-decoration: none;
     color: #457692
 }
 
 p a:hover {
     color: #457692;
+}
+
+.border-pro {
+    border-bottom: 1px solid #457692;
 }
 
 .background-image {
@@ -39,6 +42,14 @@ p a:hover {
     z-index: 0;
 }
 
+.btn-submit {
+    background-color: #cfdce4;
+    color: #457692;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 10px 50px;
+}
+
 .first-section-3 {
     position: relative;
 
@@ -50,6 +61,16 @@ p a:hover {
     opacity: 1;
 }
 
+.calendar h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.calendar p {
+    font-size: 20px;
+}
+
 .text-container {
     position: relative;
     z-index: 2;
@@ -57,19 +78,19 @@ p a:hover {
 
 .map-container {
     width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 10
+    max-height: 500px; /* Limita l'altezza della mappa */
+    overflow: hidden !important; /* Assicurati che non generi scrollbar interne */
+    margin: 20px 0;
 }
 
+form {
+    margin: 30px 0;
+}
 iframe {
     width: 100%;
-    height: 100%;
+    height: 300px; /* Adatta all'altezza del contenitore */
     border: none;
 }
-
 
 .lista-prenota {
     background-color: #cfdce4;
@@ -80,4 +101,26 @@ iframe {
     margin-bottom: -75px;
     position: relative;
     z-index: 11
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 23px;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+        border: none;
+        margin: 50px 0;
+    }
+    .lista-prenota {
+        background-color: #cfdce4;
+        border-radius: 20px;
+        padding: 30px;
+        color: #457692;
+        font-size: 16px;
+        margin-bottom: -30px;
+        position: relative;
+        z-index: 11;
+    }
 }

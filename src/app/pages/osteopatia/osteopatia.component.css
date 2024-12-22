@@ -7,8 +7,7 @@ h2 {
 }
 
 img {
-    height: 220px;
-    border-radius: 20px;
+    width: 75%;
 }
 
 .text-5,
@@ -17,7 +16,7 @@ img {
 .text-8,
 .text-9,
 .text-10,
-.text-11{
+.text-11 {
     font-size: 20px;
 }
 
@@ -28,11 +27,21 @@ img {
 .text-8,
 .text-9,
 .text-10,
-.text-11 {
+.text-11,
+.fascia-blu {
     opacity: 0;
     margin-left: -20px;
     width: 100%;
     transition: opacity 1s ease, transform 2.3s ease;
+    color: #295066
+}
+
+.fascia-blu {
+    background-color: #6a9bad;
+    padding: 20px 0;
+    color: #295066;
+    text-align: center;
+    font-size: 34px;
 }
 
 .titolo.show,
@@ -57,14 +66,101 @@ img {
 }
 
 
-.bg-light-2.show  {
+.bg-light-2.show {
     opacity: 1;
 }
 
+.titolo {
+    color: #295066;
+    opacity: 1;
+}
+
+.pre-list {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.p-pazienti {
+    font-size: 18px;
+}
+
+.img-pazienti {
+    width: 400px;
+}
+
+.desktop {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
     img {
         width: 200px;
         height: 120px;
         border-radius: 20px;
     }
+
+    .text-5,
+    .text-6,
+    .text-7,
+    .text-8,
+    .text-9,
+    .text-10,
+    .text-11,
+    .p-pazienti {
+        font-size: 16px;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-pazienti, img {
+        width: 450px;
+        height: 270px;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #457692;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    border: 1px solid #fff;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #295066;
 }

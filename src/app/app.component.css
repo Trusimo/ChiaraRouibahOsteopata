@@ -38,9 +38,10 @@ footer {
     align-items: center;
     padding: 0 20px;
     margin-top: auto;
+    font-size: 14px;
 }
 
-fa-icon {
+fa-icon a {
     color: #457692;
     cursor: pointer;
 }
@@ -65,11 +66,59 @@ body>main {
     font-size: 20px;
 }
 
+.fake {
+    width: 250px;
+}
+
 .logo {
     width: 100px;
 }
 
 .nav-desktop {
-    background-color:#cfdce4;
+    background-color: #cfdce4;
     width: 100%;
+    border-bottom: 1px solid #457692;
+}
+
+.navlist {
+    background-color: #295066;
+    margin-top: -10px;
+}
+
+footer a {
+    font-size: 12px;
+}
+
+footer h1 {
+    font-size: 14px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #457692;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    border: 1px solid #fff;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #295066;
 }
