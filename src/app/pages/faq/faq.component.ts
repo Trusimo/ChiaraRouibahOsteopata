@@ -1,7 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-faq',
+    standalone: true,
+    imports: [FormsModule, CommonModule],
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.css']
 })

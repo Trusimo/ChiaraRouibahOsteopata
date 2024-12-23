@@ -61,7 +61,7 @@ export class ContattiComponent implements OnInit {
       Telefono: ${formData.tel}
       Richiesta: ${formData.messaggio}
     `;
-    window.location.href = `mailto:simonetrunfio96@gmail.com?subject=Richiesta Informazioni&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = `mailto:chiara.rouibah98@gmail.com?subject=Richiesta Informazioni&body=${encodeURIComponent(emailBody)}`;
   }
 
 }

@@ -1,7 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-homepage',
+    standalone: true,
+    imports: [FormsModule, CommonModule],
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })

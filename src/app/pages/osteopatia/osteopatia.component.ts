@@ -1,7 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-osteopatia',
+  standalone: true,
+  imports: [FormsModule, CommonModule],
   templateUrl: './osteopatia.component.html',
   styleUrls: ['./osteopatia.component.css']
 })
