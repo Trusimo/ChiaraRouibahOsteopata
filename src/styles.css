@@ -210,13 +210,6 @@ a {
     padding: 20px;
 }
 
-.review {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    height: 200px;
-}
-
 .review h2 {
     color: #fff;
 }

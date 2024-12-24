@@ -36,6 +36,31 @@ span a {
     height: 300px;
 }
 
+.carousel-item .carousel-text {
+    width: 550px;
+    height: 500px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.review p {
+    color: white;
+}
+
+.reviews {
+    padding: 0 300px;
+}
+
+.reviews h1 {
+    color: white;
+}
+
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -65,9 +90,8 @@ span a {
     display: none;
 }
 
-#carouselReview {
-    max-width: 300px; /* Imposta una larghezza fissa */
-    overflow: hidden; /* Evita problemi di overflow */
+.carouselreview {
+    opacity: 1;
 }
 
 .font-normal {
@@ -117,6 +141,12 @@ span a {
     width: 800px;
 }
 
+@media only screen and (max-width: 1399px) {
+    .reviews {
+        padding: 0 100px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .img-carousel {
         height: 500px;
@@ -133,6 +163,10 @@ span a {
 
     .desktop {
         display: none;
+    }
+
+    .first-section {
+        height: 85vh;
     }
     
     .mobile {
@@ -156,5 +190,25 @@ span a {
     .spec-btn{
         width: 200px;
         font-size: 20px;
+    }
+
+    .reviews {
+        padding: 0 15px;
+    }
+
+    .review p {
+        font-size: 14px;
+    }
+    .review {
+        margin: 30px 0;
+    }
+
+    .review h4, .review h5 {
+        font-size: 17px;
+        margin-top: -10px;
+    }
+
+    .review h5 {
+        margin-top: -6px;
     }
 }
