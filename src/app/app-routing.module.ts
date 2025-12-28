@@ -11,10 +11,12 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'contatti', component: ContattiComponent },
   { path: '', redirectTo: 'homepage', pathMatch: 'full' },
+  { path: '**', redirectTo: 'homepage' } // Protezione extra per rotte inesistenti
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  // L'aggiunta di { useHash: true } risolve i problemi di refresh su GitHub Pages
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
