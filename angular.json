@@ -22,7 +22,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.css"
@@ -44,7 +45,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/ChiaraRouibahOsteopata/"
+              "baseHref": "/"
             },
             "development": {
               "buildOptimizer": false,
@@ -85,7 +86,8 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.css"

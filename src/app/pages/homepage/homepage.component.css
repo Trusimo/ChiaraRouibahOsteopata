@@ -25,11 +25,38 @@ span a {
 .bg-image {
     position: relative;
     width: 100%;
-    height: 300px; /* Altezza regolabile */
-    background-image: url(../../../assets/images/foto_sito/immagine_1.jpg);
+    height: 300px;
+    background-image: url(../../../assets/images/new/mattiamapelli_fotografie-13.jpg);
     background-size: cover;
     background-position: center;
-    filter: grayscale(0.6) ;
+    /* Rimuovi z-index da qui se non necessario */
+    overflow: hidden; 
+}
+
+.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    z-index: 1; /* Primo livello sopra l'immagine */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cambiato da white a blu per leggibilità su fondo bianco 0.6 */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+    width: 100%;
+    z-index: 2; /* Livello superiore all'overlay ::before */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-control-prev-icon {
@@ -61,25 +88,13 @@ span a {
     color: white;
 }
 
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 36px; /* Regola la dimensione del testo */
-    font-weight: bold;
-    text-align: center;
-    padding: 0 10px;
-    width: 100%;
-}
 .studio-text-1 {
     color: white;
 }
 
 .chiara {
-    max-height: 100%;
-    max-width: 100%;
+    max-width: 450px; /* puoi regolare la larghezza */
+    height: auto;
 }
 
 .desktop {
@@ -148,17 +163,19 @@ span a {
 }
 
 @media only screen and (max-width: 767px) {
-    .img-carousel {
-        height: 500px;
-        width: unset;
+.img-carousel {
+        width: 100%;    /* L'immagine occupa tutta la larghezza dello schermo */
+        height: auto;   /* L'altezza si adatta proporzionalmente per non deformarla */
+        max-height: 240px;
+        object-fit: cover;
     }
     p {
         color: #295066;
         font-size: 16px;
     }
     .chiara {
-        max-width: 250px;
-        max-height: 300px;
+        max-width: 300px;
+        height: auto;
     }
 
     .desktop {

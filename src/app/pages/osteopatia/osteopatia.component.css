@@ -7,7 +7,7 @@ h2 {
 }
 
 img {
-    width: 75%;
+    width: 50%;
 }
 
 .text-5,
@@ -130,8 +130,11 @@ img {
     }
 
     .img-pazienti, img {
-        width: 450px;
         height: 270px;
+    }
+
+    .img-large {
+        width: 350px;
     }
 }
 

@@ -57,10 +57,10 @@ nav fa-icon:hover {
     font-family: 'AbhayaLibre';
     src: local('AbhayaLibre'), url('../src/assets/fonts/AbhayaLibre-Regular.ttf') format('truetype');
 }
-
+/* 
 .container {
     max-width: 100%;
-}
+} */
 
 .flex-center {
     display: flex;
