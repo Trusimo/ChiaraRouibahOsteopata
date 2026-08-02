@@ -33,9 +33,10 @@ export class AppComponent implements OnInit {
   visible: boolean = false;
   home: boolean = true;
   public href: string = "";
-  faIg= faInstagram;
-  faWa= faWhatsapp;
+  faIg = faInstagram;
+  faWa = faWhatsapp;
   showBackToTop: boolean = false;
+  showChiusuraModal: boolean = false;
 
   constructor(private el: ElementRef, private router: Router) { }
 
@@ -68,6 +69,15 @@ export class AppComponent implements OnInit {
       // Mostra la navbar senza transizione su altre pagine
       this.isH2Visible = true;
       this.isNavbarVisible = true;
+    }
+
+    const oggi = new Date();
+
+    const inizio = new Date(2026, 7, 1, 0, 0, 0);
+    const fine = new Date(2026, 7, 26, 23, 59, 59);
+
+    if (oggi >= inizio && oggi <= fine) {
+      this.showChiusuraModal = true;
     }
 
   }
@@ -143,4 +153,8 @@ export class AppComponent implements OnInit {
       this.home = false;
     }
   }
+
+  chiudiModalChiusura() {
+  this.showChiusuraModal = false;
+}
 }

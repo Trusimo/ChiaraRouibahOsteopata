@@ -46,6 +46,30 @@
   </main>
 </body>
 
+<div class="modal-overlay" *ngIf="showChiusuraModal">
+  <div class="modal-content">
+
+    <button 
+      class="modal-close"
+      (click)="chiudiModalChiusura()">
+      ×
+    </button>
+
+    <h2>Chiusura estiva 🏖️</h2>
+
+    <p>
+      Lo studio resterà chiuso dal <b>10 agosto al 7 settembre 2026</b>.
+    </p>
+
+    <p>
+      <b>Buone vacanze!</b>
+      <br>
+      Chiara Rouibah 🌿
+    </p>
+
+  </div>
+</div>
+
 <!-- Altro contenuto della tua pagina -->
 <footer class="d-flex justify-content-between">
   <h1 class="font-amsterdam-footer">Chiara Rouibah</h1>
